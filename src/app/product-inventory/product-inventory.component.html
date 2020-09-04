@@ -1,0 +1,27 @@
+<mat-card class="mat-elevation-z10">
+    <mat-card-title><h3>Products Inventory</h3></mat-card-title>
+    <mat-card-content class="mat-elevation-z10">
+        <table mat-table class="col-lg-12 table-hover" [dataSource]="inventorySource">
+            <ng-container matColumnDef="ProductName">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.p.productname}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="Quantity">
+              <th mat-header-cell *matHeaderCellDef> Quantity  </th>
+              <td mat-cell *matCellDef="let element"> {{element.qty}} </td>
+            </ng-container>
+        
+        
+          
+        
+            <tr mat-header-row   *matHeaderRowDef="datacolumns"></tr>
+            <tr mat-row  *matRowDef="let element;  columns: datacolumns;"></tr>
+                
+          </table>
+    </mat-card-content>
+
+  </mat-card>

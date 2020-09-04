@@ -1,0 +1,16 @@
+mat-sidenav {
+    width: 200px;
+  }
+  .searchpanel > *{
+    padding:5px;
+  }
+  .searchpanel{
+    text-align:center;
+  }
+  .searchpanel > mat-form-field{
+    width:50%;
+  }
+  td,th{
+    padding:5px 10px !important;
+
+}

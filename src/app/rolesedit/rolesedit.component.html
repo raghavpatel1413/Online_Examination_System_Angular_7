@@ -1,0 +1,11 @@
+
+<div class="container">
+  <mat-form-field class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+    <input type="text" matInput placeholder="Role Name " [(ngModel)]="name"/>
+  </mat-form-field>
+  <div *ngFor="let p of roles;let i = index" class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+  <mat-checkbox [name]="checkboxroles" [value]="p._id" (change)="showoption($event,i)" [checked]="p.checked" >{{p.pname}}</mat-checkbox>
+ </div>  <br>
+<div>   <button class="col-lg-1" type="button" (click)="save()" mat-raised-button color="primary">Add Role</button>
+</div>
+</div>

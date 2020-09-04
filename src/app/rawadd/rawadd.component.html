@@ -1,0 +1,13 @@
+<br>
+<mat-form-field class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <input type="text" [(ngModel)]="productname" matInput placeholder="Product Name " />
+  </mat-form-field>
+  <mat-form-field  class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <input type="text" [(ngModel)]="uom" matInput placeholder="Unit of Measure " />
+    </mat-form-field>
+    <mat-form-field class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+      <input type="Text" [(ngModel)]="uc" matInput placeholder="Unit Cost" />
+    </mat-form-field>
+ 
+    <button color="primary" mat-raised-button type="button" (click)="save()" >Save</button>
+ 

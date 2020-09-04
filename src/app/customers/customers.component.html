@@ -1,0 +1,25 @@
+<mat-card class="mat-elevation-z10">
+    <mat-card-title><h3> <span class="material-icons">
+        account_box
+    </span> Customers</h3></mat-card-title>
+    <mat-card-content class="mat-elevation-z10">
+        <nav mat-tab-nav-bar >
+            <a mat-tab-link
+              routerLink="/adminpanel/customers/create">
+              Create
+            </a>
+            <a mat-tab-link
+            routerLink="/adminpanel/customers/view">
+              View
+          </a>
+
+          <a mat-tab-link
+          routerLink="/adminpanel/customers/import">
+            Import
+        </a>
+      
+          </nav>
+          
+          <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,15 @@
+
+<div class="container-fluid">
+<mat-form-field class="col-lg-12">
+  <mat-select [formControl]="customerid" placeholder="-- Select Customer --">
+    <mat-option [value]="e.custid" *ngFor="let e of employees">{{ e.custname }}</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field class="col-lg-12">
+  <textarea matInput [formControl]="formDescription" placeholder="Description"></textarea> 
+  <mat-error>Please Enter Description</mat-error> 
+</mat-form-field>
+<div class="col-lg-12">
+<button mat-raised-button color="primary" (click)="save()" >Save</button>
+</div>
+</div>

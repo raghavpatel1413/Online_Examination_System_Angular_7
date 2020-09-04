@@ -1,0 +1,11 @@
+<div style="background: transparent" class="container">
+<mat-card>
+  <mat-card-title>
+<h2>{{data.message}}</h2>
+</mat-card-title>
+<mat-card-actions *ngIf='data.ok!=null&&data.cancel!=null'>
+  <button type="button" mat-raised-button  color="primary" (click)="remove()" >{{data.ok}}</button>&nbsp;
+  <button type="cancel" mat-stroked-button color="primary" (click)="cancel()">{{data.cancel}}</button>
+</mat-card-actions>
+</mat-card>
+</div>

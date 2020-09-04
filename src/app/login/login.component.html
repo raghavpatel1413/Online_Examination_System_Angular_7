@@ -1,0 +1,41 @@
+<div  style="position: fixed; height:100%; text-align:center; background-color:#0091ea; width: 100%; top:0; padding-top:50px; margin-top:0;">
+    <mat-card class="mat-elevation-z3 col-lg-3" style="display:inline-block;">
+      <mat-card-title style="text-align:center!important;">
+
+        <img src="assets/logo.jpg" />
+      </mat-card-title>
+      <form (submit)="login($event)">
+        <mat-card-content>
+          <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+            <div fxLayout="column" fxFlex>
+              <div fxLayout="row" class="input-row" fxFlex>
+                <mat-form-field fxFlex>
+                 
+                  <input matInput type="email" placeholder="Email" />
+
+                  <mat-error>Please Enter proper email</mat-error>
+                </mat-form-field>
+              </div>
+              <div fxLayout="row" class="input-row" fxFlex>
+
+                <mat-form-field fxFlex>
+                  
+                  <input matInput type="password" placeholder="Password" />
+
+                  <mat-error>Please Enter proper email</mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      <mat-card-actions>
+        <button type="submit" value="Login" mat-raised-button color="primary">LOGIN</button>
+        <button mat-button color="primary">Forgot Password?</button>
+      </mat-card-actions>
+
+    </form>
+    </mat-card>
+    <footer style="background-color:white; position: absolute; bottom:0%;  width: 100%; padding:20px;" class="mat-body-1 mat-elevation-z3">Powered By CFinix Solutions LLP</footer>
+
+  
+  </div>

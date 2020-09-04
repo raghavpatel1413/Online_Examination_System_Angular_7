@@ -1,0 +1,201 @@
+<div class="container">
+<div fxLayout="column"  fxLayoutAlign="start stretch" fxLayoutGap="12px" >
+        <nav  id="mainbar" style="z-index:2;"  class="navbar mat-elevation-z5   fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#" style="font-weight: 600;"> <img src="assets/logo2.png" height="32" > Arohi Print</a>
+                <button class="navbar-toggler" id="toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav ml-auto" >
+                    <li class="nav-item dropdown">
+                        <a  mat-button  class="nav-link" routerLinkActive="active-link" style="text-align: left;" routerLink="/adminpanel/dashboard"><i class="material-icons">
+                                    dashboard
+                                    </i> Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle" style="text-align: left;"  mat-button href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="material-icons">
+                                              
+                                              </i> Sales
+                                          </button>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                                <a class="dropdown-item" mat-menu-item  routerLinkActive="active-link" routerLink="/adminpanel/inquiry"><i class="material-icons">
+                                                                payment
+                                                                </i> Inquiry</a>
+                                                                <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/quotation"><i class="material-icons">
+                                                                                map
+                                                                                </i> Qutotation</a>
+                                                                                
+                            <a class="dropdown-item" mat-menu-item><i class="material-icons">
+                                        timeline
+                                        </i> Pipline</a>
+
+                                        <a  mat-menu-item class="dropdown-item "  href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="material-icons">
+                                                                local_parking
+                                                                </i> Products
+                                                            </a>
+                                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                                    <a class="dropdown-item" mat-menu-item routerLink="/adminpanel/product/">Products</a>
+                                                    <a class="dropdown-item" mat-menu-item routerLink="/adminpanel/rawmaterial/">RawMaterials</a>
+                                                  </div>
+
+
+                                                        </div>
+                              </li>
+
+                   <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle"  mat-button href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">
+                                                        local_parking
+                                                        </i> Purchase
+                                                    </button>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                            <a class="dropdown-item" mat-menu-item >Purchase Order</a>
+                                            <a class="dropdown-item" mat-menu-item >Account Payable</a>
+                                          </div>
+
+                   </li>
+                    <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle"  mat-button href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">
+                                                                account_box
+                                                                            </i> Customers
+                                                    </button>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/customers" >Customer</a>
+                                            <a class="dropdown-item" mat-menu-item >Contacts</a>
+                                          </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                                <button class="nav-link dropdown-toggle"  mat-button href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">
+                                                
+                                                                shopping_basket</i> Inventory
+                                                    </button>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/inventory/stock" >Stock Level</a>
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/inventory/product" >Products</a>
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/inventory/rawmaterial" >RawMaterials</a>
+                                          </div>
+                        </li>
+                    <li class="nav-item dropdown">
+                                    <button class="nav-link dropdown-toggle" style="text-align: left;"  mat-button href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">
+                                                
+                                                                history</i> Jobs
+                                                    </button>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/job/orders" >Work Orders</a>
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/job/active" >Active Jobs</a>
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/job/queue" >Jobs Queue</a>
+                                            
+                                            <a class="dropdown-item" mat-menu-item routerLinkActive="active-link" routerLink="/adminpanel/job/complete" >Completed Jobs</a>
+                                          </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" style="text-align: left;"  mat-button href="#" id="navbarDropdownpro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          
+                    <i class="material-icons">
+                            perm_identity
+                            </i> Admin
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownpro">
+                                    <a mat-menu-item class="dropdown-item"  routerLink="/adminpanel/users">
+                                        <i class="material-icons">
+                                            how_to_reg
+                                            </i> Users</a>
+                                            <a mat-menu-item class="dropdown-item" routerLink="/adminpanel/roles"><i class="material-icons">
+                                                    timeline
+                                                    </i> Roles</a> 
+                                                    <a mat-menu-item (click)="logout()" class="dropdown-item">
+                                                           <i class="material-icons">close</i>
+                                                                Logout
+                                                            </a>
+                                                </div>
+                                                    
+                        </li>
+                   
+                  </ul>
+                  
+                </div>
+              </nav>
+<!--mat-toolbar style="width:100%; position: fixed; z-index:10;"  class="maincolor mat-elevation-z4">
+          <span><img src="assets/logo2.png" height="32"> Arohi Print</span>
+
+          <span class="example-fill-remaining-space"></span>
+        <nav>
+            <span><a mat-button  routerLinkActive="active-link" routerLink="/adminpanel/dashboard"><i class="material-icons">
+              dashboard
+              </i> Dashboard</a></span>
+              
+              <span><a mat-button routerLinkActive="active-link" routerLink="/adminpanel/inquiry"><i class="material-icons">
+                    payment
+                    </i> Inquiry</a></span>
+
+          <span><button mat-button routerLinkActive="active-link" routerLink="/adminpanel/quotation"><i class="material-icons">
+              map
+              </i> Qutotation</button></span>
+          <span><button mat-button routerLinkActive="active-link" routerLink="/adminpanel/customers" ><i class="material-icons">
+              account_box
+              </i> Customers</button></span>
+          
+          <span><button mat-button> <i class="material-icons">
+              history
+              </i> Job</button></span>
+          <span><button mat-button><i class="material-icons">
+              shopping_basket
+              </i> Inventory</button></span>
+          
+          <span><button mat-button><i class="material-icons">
+              timeline
+              </i> Pipline</button></span>
+              
+          <span><button mat-button  [matMenuTriggerFor]="ProductMenu">
+            <i class="material-icons">
+                local_parking
+                </i> Products</button></span>
+                
+                <mat-menu #ProductMenu="matMenu" yPosition="below" xPosition="after">
+                        <button mat-menu-item routerLink="/adminpanel/product/">Products</button>
+                        <button mat-menu-item routerLink="/adminpanel/rawmaterial/">RawMaterials</button>
+                      </mat-menu>              
+          
+         
+          <span><button mat-button [matMenuTriggerFor]="ConfigurationMenu"><i class="material-icons">
+              perm_identity
+              </i> Admin</button></span>   
+              
+              <mat-menu #ConfigurationMenu="matMenu" yPosition="above" xPosition="before">
+                    <button mat-menu-item  routerLink="/adminpanel/users">
+                        <i class="material-icons">
+                            how_to_reg
+                            </i> Users</button>
+                            <button mat-menu-item routerLink="/adminpanel/roles"><i class="material-icons">
+                                    timeline
+                                    </i> Roles</button> 
+             
+                  </mat-menu>
+        </nav>
+        </mat-toolbar-->
+        <div fxFlex>
+            <div class="container-fluid"  style="padding:10px; min-height:700px; margin-top:80px; ">
+                <router-outlet (activate)="onActivate($event, outlet)" #outlet>
+
+    </router-outlet>
+</div>
+</div>
+    
+  </div>
+</div>
+
+<mat-toolbar style="width:100%;"   class="maincolor mat-elevation-z5" >
+        <span></span>
+      
+        <!-- This fills the remaining space of the current row -->
+        <span class="example-fill-remaining-space"></span>
+        <span class="mat-body-2">Powered by CFinix 2018</span>
+      </mat-toolbar>

@@ -1,0 +1,27 @@
+<br>
+<div class="container">
+  <div class="table-responsive">
+    <table mat-table  [dataSource]="dataSource" class="mat-elevation-z5 table table-striped" width="100%">
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+        
+          <!-- Name Column -->
+          <ng-container matColumnDef="privillages">
+            <th mat-header-cell *matHeaderCellDef> Privillages </th>
+            <td mat-cell *matCellDef="let element"> <span *ngFor="let r of element.privillages">{{r.pname}} ,</span> </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="actions">
+              <th mat-header-cell *matHeaderCellDef> Actions </th>
+              <td mat-cell *matCellDef="let element;let ind = index"> <button mat-icon-button (click)="delete(ind)"><i class="material-icons">delete</i></button> <button mat-icon-button (click)="edit(ind)"><i class="material-icons">edit</i></button>  </td>
+            </ng-container>
+          
+          <tr mat-header-row   *matHeaderRowDef="dataFields"></tr>
+          <tr mat-row  *matRowDef="let row;  columns: dataFields;"></tr>
+        
+    
+    </table>
+    </div>
+  </div>

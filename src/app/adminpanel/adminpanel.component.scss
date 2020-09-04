@@ -1,0 +1,26 @@
+mat-grid-tile {
+  background: #f7f7f7 ;
+}
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+.backcolor{
+  background-color:#98a8b4;
+}
+.maincolor{
+  color:#5d5386;
+  background-color:white;
+}
+.nav-item{
+  text-align: left !important;
+  
+}
+.nav-item,.dropdown-toggle,.nav-link{
+  color:black !important;
+}
+.active-link{
+  color:white;
+  background: gray;
+}

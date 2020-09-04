@@ -1,0 +1,46 @@
+<br>
+<div class="container">
+  <div class="table-responsive">
+    <table mat-table  [dataSource]="dataSource" class="mat-elevation-z5 table table-striped" width="100%">
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+        
+          <!-- Name Column -->
+          <ng-container matColumnDef="username">
+            <th mat-header-cell *matHeaderCellDef> Username </th>
+            <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+          </ng-container>
+        
+          <!-- Weight Column -->
+          <ng-container matColumnDef="dob">
+            <th mat-header-cell *matHeaderCellDef> Date of Birth  </th>
+            <td mat-cell *matCellDef="let element"> {{element.dob | date: 'dd/MM/yyyy'}} </td>
+          </ng-container>
+        
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="role">
+            <th mat-header-cell *matHeaderCellDef> Role </th>
+            <td mat-cell *matCellDef="let element"> {{element.role.name}} </td>
+          </ng-container>
+          
+          <ng-container matColumnDef="address">
+              <th mat-header-cell *matHeaderCellDef> Address </th>
+              <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element; let ind = index;"> <button mat-icon-button (click)="delete(ind)"><i class="material-icons">delete</i></button> 
+                  <button mat-icon-button type="button"><i class="material-icons" (click)="edit(ind)">edit</i></button>
+                </td>
+              </ng-container>
+          
+          <tr mat-header-row   *matHeaderRowDef="dataFields"></tr>
+          <tr mat-row  *matRowDef="let row;  columns: dataFields;"></tr>
+        
+    
+    </table>
+    </div>
+  </div>
